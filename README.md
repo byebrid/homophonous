@@ -1,13 +1,13 @@
-# Wordsmith\.py
+# homophonous.py
 
 A python tool to generate homophonous sentences and phrases.
 
 ## Example
 From a python terminal:
 ```
->>> from wordsmith import wordsmith
+>>> from homophonous import homophonous
 >>> phrase = 'Ice cream'
->>> phrases = wordsmith(phrase)
+>>> phrases = homophonous(phrase)
 >>> for phrase in phrases:
 ...     print(phrase)
 ai scream
@@ -22,7 +22,7 @@ ice creme
 
 Alternatively, from the command line:
 ```
-$ python wordsmith.py "ice cream" # Note you need the required packages
+$ python homophonous.py "ice cream" # Note you need the required packages
 ```
 
 ----------------------------------------------------------------

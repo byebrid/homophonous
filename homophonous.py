@@ -1,4 +1,4 @@
-# wordsmith.py
+# homophonous.py
 
 import nltk
 from nltk.corpus import cmudict
@@ -143,14 +143,14 @@ def get_phrases(phrase_pronunciations: PhrasePronunciationList) -> PhraseList:
     return phrases
 
 
-def wordsmith(phrase: str) -> PhraseList:
+def homophonous(phrase: str) -> PhraseList:
     """
     Return a list of homophonous phrases, i.e. phrases whose phonetics match
     that of the given `phrase`.
 
     Example
     -------
-    >>> wordsmith(phrase='Ice cream')
+    >>> homophonous(phrase='Ice cream')
     Looking over 1 different pronunciations of sentence...
     32it [00:00, 62747.89it/s]
     ai scream
@@ -184,7 +184,7 @@ if __name__ == '__main__':
 
     print(f'Finding phrases homophonous to {phrase}...\n')
 
-    phrases = wordsmith(phrase)
+    phrases = homophonous(phrase)
 
     print('\nDone! See below:')
     for phrase in phrases:
